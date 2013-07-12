@@ -1,0 +1,9 @@
+h1 Projects (#{@projects.count})
+
+.row-fluid
+	ul#project-list.thumbnails.span12
+		- @projects.each do |project|
+			li.span3.thumbnail
+				h3 #{project.name}
+				img src="#{project.images.first.image.url(:medium)}"
+				= link_to 'View Project', project_path(project)

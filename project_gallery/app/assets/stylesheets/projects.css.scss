@@ -1,0 +1,19 @@
+// Place all the styles related to the projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#project-list {
+	img {
+		margin-bottom: 20px;
+	}
+
+	li.span3:nth-child(4n + 5) {
+		margin-left : 0px;
+	}
+}
+
+#project-thumbnails {
+	li.span4:nth-child(3n + 4) {
+		margin-left : 0px;
+	}
+}

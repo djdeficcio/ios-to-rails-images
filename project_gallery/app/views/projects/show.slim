@@ -1,0 +1,11 @@
+h1 #{@project.name}
+
+.container
+	.row-fluid
+		ul#project-thumbnails.span9.thumbnails
+			- @project.images.each do |project_image|
+				li.thumbnail.span4
+					img src="#{project_image.image.url(:medium)}"
+
+		.span3
+			p #{@project.framework}
